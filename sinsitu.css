@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+*{margin: 0;
+padding: 0;}
+
+body{height:auto;background:#000000;}
+
+body{background-attachment: fixed;background-size: cover;
+	background-position: center center;background-image: url("../../../../../デスクトップ/furiru-web/sinsitu.jpeg";
+}
+

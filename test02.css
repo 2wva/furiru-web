@@ -1,0 +1,161 @@
+
+
+/* 背景 */
+
+body{height:auto;background:#000000;}
+
+
+#rist{font-size: 1.5vw;font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";list-style-type: none;}
+
+.volume{position: absolute;top: 15%;left: 49%;color: #FFFFFF;padding: 0;margin: 0;transform: translate(-50%,-50%);}
+
+
+.futoumeido{position: absolute;top: 66%;left: 49%;color: #FFFFFF;padding: 0;margin: 0;transform: translate(-50%,-50%);}
+
+
+.normal{position: absolute;top: 20%;left: 49%;color: #FFFFFF;padding: 0;margin: 0;transform: translate(-50%,-50%);}
+
+
+.color{position: absolute;top: 40%;left:47%;color: #FFFFFF;padding: 0;margin: 0;transform: translate(-50%,-50%);}
+
+.back{position: absolute;top: 90%;left:5%;color: #FFFFFF;font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";font-size: 1.6vw;}
+
+#background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+/* レイヤー（JS で追加） */
+.layer-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  z-index: 10;
+  transition: opacity 0.3s;
+}
+
+.layer-img.visible {
+  opacity: 1;
+}
+
+/* ボタン */
+.controls {
+  z-index: 9999;
+	position: absolute;top: 27%;left: 59%;padding: 0;margin: 0;transform: translate(-50%,-50%);}
+
+
+.controls2 {
+  z-index: 9999;
+	position: absolute;top: 50%;left: 59%;padding: 0;margin: 0;transform: translate(-50%,-50%);}
+
+
+.controls3 {
+  z-index: 9999;
+	position: absolute;top: 74%;left: 70%;padding: 0;margin: 0;transform: translate(-50%,-50%);}
+
+
+.controls button:active,
+.controls2 button:active,
+.controls3 button:active{
+  transform: scale(0.95);
+}
+
+
+.controls button,
+.controls2 button,
+.controls3 button{
+  font-size: 1.5vw;
+  padding: 8px 20px;
+  border-radius: 8px;     /* 角を丸く */
+  cursor: pointer;
+	
+	font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", "serif";
+}
+
+
+
+
+
+
+
+#stage {
+  position: relative;
+  width: 38%;
+}
+
+.layer {
+  position: absolute;
+  top: 28%;
+  left: 15%;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+
+
+.layer.visible {
+  opacity: 1;
+}
+
+
+
+
+.opacity-control {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+#opacitySlider {position: absolute;top: 74%;left: 52%;color: #FFFFFF;padding: 0;margin: 0;transform: translate(-50%,-50%)
+}
+
+label[for="opacitySlider"] {
+  position: absolute;
+  bottom: 60px;
+  right: 20px;
+  z-index: 20;
+}
+
+
+/* ===== スライダー見た目修正（PC差対策） ===== */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 170px;
+  height: 6px;
+  background: #666;
+  border-radius: 3px;
+  outline: none;
+}
+
+/* つまみ（Chrome / Edge / Safari） */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* つまみ（Firefox） */
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* トラック（Firefox） */
+input[type="range"]::-moz-range-track {
+  height: 6px;
+  background: #666;
+  border-radius: 3px;
+}
+
